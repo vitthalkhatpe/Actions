@@ -17,21 +17,6 @@ jobs:
         distribution: 'adopt'
         cache: gradle
 
-   - name: Extract existing version code
-        run: |
-          # Extract version number from branch name
-          version_name=${GITHUB_REF#refs/heads/bump/v}
-
-          # Get existing version code from build.gradle
-          version_code=$(grep "versionCode" app/build.gradle | awk '{print $2}' | tr -d '\n')
-
-          # Increment existing version code by 1
-          version_code=$((version_code + 1))
-
-          # Set environment variable for later use
-          echo "VERSION_NAME=$version_name" >> $GITHUB_ENV
-          echo "VERSION_CODE=$version_code" >> $GITHUB_ENV
-          
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
