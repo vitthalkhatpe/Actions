@@ -32,7 +32,7 @@ jobs:
 
     - name: Create service_account.json
       run: echo '${{ secrets.ACCOUNT_SECRET }}' > service_account.json
-    - name: Deploy to Play Store
+    - name: Deploy to Play Store internal
       uses: r0adkll/upload-google-play@v1.0.15
       with:
         serviceAccountJson: service_account.json
