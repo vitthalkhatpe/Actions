@@ -1,4 +1,4 @@
-package com.vitt.actions.actions.ui.theme
+package com.vitt.actions.actiontest.ui.theme
 
 import android.app.Activity
 import android.os.Build

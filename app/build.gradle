@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.vitt.actions.actions'
+    namespace 'com.vitt.actions.actiontest'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.vitt.actions.actions"
+        applicationId "com.vitt.actions.action.test"
         minSdk 26
         targetSdk 33
         versionCode 2
