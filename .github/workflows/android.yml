@@ -36,7 +36,7 @@ jobs:
       uses: r0adkll/upload-google-play@v1.0.15
       with:
         serviceAccountJson: service_account.json
-        packageName: com.vitt.actions.actions
+        packageName: com.vitt.actions.actiontest
         releaseFiles: app/build/outputs/bundle/release/*.aab
         track: internal
         mappingFile: app/build/outputs/mapping/release/mapping.txt
