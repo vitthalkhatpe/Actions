@@ -1,4 +1,4 @@
-package com.vitt.actions.actiontest
+package com.vitt.actions.actions
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.vitt.actions.actiontest.ui.theme.ActionsTheme
+import com.vitt.actions.actions.ui.theme.ActionsTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,4 +1,4 @@
-package com.vitt.actions.actiontest.ui.theme
+package com.vitt.actions.actions.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

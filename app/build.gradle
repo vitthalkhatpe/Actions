@@ -4,15 +4,15 @@ plugins {
 }
 
 android {
-    namespace 'com.vitt.actions.actiontest'
+    namespace 'com.vitt.actions.actions'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.vitt.actions.action.test"
+        applicationId "com.vitt.actions.actions"
         minSdk 26
         targetSdk 33
-        versionCode 4
-        versionName "1.3"
+        versionCode 5
+        versionName "1.4"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
