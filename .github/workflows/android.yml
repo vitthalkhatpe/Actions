@@ -16,6 +16,8 @@ jobs:
         NUM: ${{ github.run_number }}
         run: |
           echo "GITHUB_RUN_NUMBER_WITH_OFFSET=$(($NUM + 200))" >> $GITHUB_ENV
+    - name: 'Perform Operation with ID ${{ env.GITHUB_RUN_NUMBER_WITH_OFFSET }}'
+      run: echo "Success!"
     
     - uses: actions/checkout@v2
     - name: set up JDK 17
