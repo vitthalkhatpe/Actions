@@ -11,7 +11,7 @@ android {
         applicationId "com.vitt.actions.actions"
         minSdk 26
         targetSdk 33
-        versionCode 7
+        versionCode 6
         versionName "1.4"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
