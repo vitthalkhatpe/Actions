@@ -17,10 +17,11 @@ jobs:
       with:
           java-version: '17'
     - name: Bump version
-      uses: chkfung/android-version-actions@v1.1
+      uses: chkfung/android-version-actions@v1.2.1
       with:
           gradlePath: app/build.gradle 
           versionCode: ${{github.run_number}}
+          versionName: 1.0.2
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew  
