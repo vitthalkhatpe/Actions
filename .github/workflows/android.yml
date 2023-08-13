@@ -38,7 +38,7 @@ jobs:
           name: app
           path: app/release/app-release.aab
 
-    - name: Create service_account.json file
+    - name: Create service_account.json
       run: echo '${{ secrets.ACCOUNT_SECRET }}' > service_account.json
     - name: Deploy to Play Store internal
       uses: r0adkll/upload-google-play@v1.1.1
