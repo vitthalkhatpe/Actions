@@ -1,9 +1,12 @@
 
-name: Android CI
+name: Manual trigger
 
 on:
-  push:
-    branches: [ "main" ]
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Select branch and trigger build manually"
+        default: "Create build."
 
 jobs:
   build:
