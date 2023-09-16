@@ -41,7 +41,7 @@ jobs:
       with:
           gradlePath: app/build.gradle 
           versionCode: ${{ env.GITHUB_RUN_NUMBER_WITH_OFFSET }}
-          versionName: $RELEASE_VERSION
+          versionName: ${{ env.RELEASE_VERSION }}
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew  
